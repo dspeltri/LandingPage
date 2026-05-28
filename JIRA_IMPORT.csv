@@ -1,0 +1,107 @@
+Summary,Type,Priority,Description,Labels,Story Points,Epic Link,Parent
+[ÉPICA 1] Infraestrutura e Configuração Inicial,Epic,High,Configurar ambiente de desenvolvimento com Git, dependências e ferramentas de qualidade de código,infrastructure;setup,0,,
+[FEATURE 1.1] Configurar Ambiente de Desenvolvimento,Story,High,Configurar repositório Git com estrutura de pastas bem organizada,infrastructure;git,5,Infraestrutura e Configuração Inicial,
+[US 1.1.1] Configurar repositório Git com estrutura de pastas,Sub-task,High,"Repositório inicializado com .gitignore, pastas src/, assets/, css/, js/ criadas",infrastructure;git;setup,3,,Configurar Ambiente de Desenvolvimento
+[US 1.1.2] Configurar ferramentas de build e transpilação,Sub-task,High,"Webpack/Vite instalado, scripts de build configurados (npm run build, npm start)",infrastructure;build;tooling,3,,Configurar Ambiente de Desenvolvimento
+[US 1.1.3] Configurar linters e formatadores de código,Sub-task,Medium,"ESLint, Prettier, Husky configurados com regras documentadas",infrastructure;quality;linting,2,,Configurar Ambiente de Desenvolvimento
+[FEATURE 1.2] Estruturar HTML Base,Story,High,Criar arquivo HTML principal com head otimizado e meta tags,html;structure,5,Infraestrutura e Configuração Inicial,
+[US 1.2.1] Criar arquivo HTML principal com head otimizado,Sub-task,High,"HTML5, meta charset, viewport, Open Graph, fonts, favicon",html;head;seo,2,,Estruturar HTML Base
+[US 1.2.2] Estruturar seções semânticas do HTML,Sub-task,High,"Tags semânticas (header, nav, section, footer, h1-h3), ARIA labels",html;semantics;accessibility,3,,Estruturar HTML Base
+[ÉPICA 2] Navegação e Header,Epic,High,Implementar navegação fixa responsiva com efeitos modernos,navigation;ui,0,,
+[FEATURE 2.1] Implementar Navegação Fixa e Responsiva,Story,High,Criar barra de navegação flutuante com design vidro desfocado,navigation;ui;animation,8,Navegação e Header,
+[US 2.1.1] Criar barra de navegação flutuante (Fluid Island),Sub-task,High,"Position fixed, backdrop-filter blur(24px), border hairline, sombra interna",navigation;ui;css,3,,Implementar Navegação Fixa e Responsiva
+[US 2.1.2] Implementar links de navegação com hover efeito sublinhado,Sub-task,Medium,"Links Features/Pricing/Contact, pseudo-elemento ::after, sublinha com gradiente",navigation;interaction;css,2,,Implementar Navegação Fixa e Responsiva
+[US 2.1.3] Implementar botão hamburger responsivo com animação morph,Sub-task,High,"Hamburger mobile, 3 linhas, morph para X ao ativar, 45deg rotation",navigation;mobile;animation;javascript,3,,Implementar Navegação Fixa e Responsiva
+[US 2.1.4] Implementar CTA button com ícone aninhado,Sub-task,Medium,"Botão com ícone seta, efeito hover translate e scale, feedback tátil",ui;button;interaction,2,,Implementar Navegação Fixa e Responsiva
+[US 2.1.5] Tornar navegação responsiva em mobile,Sub-task,High,"Hamburger <768px, links visível ≥768px, sem horizontal scroll",navigation;responsive;mobile,2,,Implementar Navegação Fixa e Responsiva
+[ÉPICA 3] Seção Hero,Epic,High,Implementar hero section com layout assimétrico e cards flutuantes,hero;ui;animation,0,,
+[FEATURE 3.1] Implementar Hero Section com Conteúdo Principal,Story,High,Criar hero visualmente impactante com conteúdo e cards cascata,hero;layout;content,13,Seção Hero,
+[US 3.1.1] Criar layout assimétrico do hero (Asymmetrical Bento),Sub-task,High,"Grid 1fr mobile, 1.2fr 1fr desktop, padding 8rem 2rem, 100dvh min-height",hero;layout;css,3,,Implementar Hero Section com Conteúdo Principal
+[US 3.1.2] Implementar eyebrow text e heading gradiente,Sub-task,High,"Eyebrow 'Agile Estimation Perfected', H1 com gradiente branco-cinza, Clash Display",hero;typography;css,2,,Implementar Hero Section com Conteúdo Principal
+[US 3.1.3] Adicionar descrição do valor principal (hero description),Sub-task,High,"Texto descritivo clamp(1rem, 3vw, 1.25rem), color #a0a0a0, max-width 600px",hero;content;typography,1,,Implementar Hero Section com Conteúdo Principal
+[US 3.1.4] Implementar botões de CTA no hero,Sub-task,High,"Dois botões: primário (Start Estimating) e secundário (Watch Demo), com gradiente e ícone",hero;button;ui,2,,Implementar Hero Section com Conteúdo Principal
+[US 3.1.5] Adicionar badges de confiança com ícones,Sub-task,Medium,"3 badges: Ad-Free, Zero Paywalls, Jira & Azure com ícones emoji",hero;trust;ui,1,,Implementar Hero Section com Conteúdo Principal
+[FEATURE 3.2] Implementar Cards Flutuantes (Z-Axis Cascade),Story,Medium,Criar cards com efeito profundidade 3D e animação de flutuação,hero;animation;css,8,Seção Hero,
+[US 3.2.1] Criar cards com efeito de profundidade 3D,Sub-task,High,"3 cards com position absolute, backdrop-filter blur, border hairline, sombra inset",hero;cards;css,2,,Implementar Cards Flutuantes (Z-Axis Cascade)
+[US 3.2.2] Implementar animação de flutuação (float animation),Sub-task,Medium,"Keyframes floatCard, translateY(0 a -16px), duração 6s, delays 0s/0.3s/0.6s",hero;animation;css,2,,Implementar Cards Flutuantes (Z-Axis Cascade)
+[US 3.2.3] Posicionar cards com cascata visual,Sub-task,High,"Card1: top 0/left 0/z3, Card2: top 80/left 120/z2, Card3: top 140/left 220/z1, rotation -2/+1/-1.5deg",hero;cards;css,2,,Implementar Cards Flutuantes (Z-Axis Cascade)
+[US 3.2.4] Adicionar conteúdo aos hero cards,Sub-task,Medium,"Card1: 📊 Live Voting, Card2: 📈 Analytics, Card3: 🔗 Sync com descrições",hero;content;cards,1,,Implementar Cards Flutuantes (Z-Axis Cascade)
+[US 3.2.5] Aplicar scroll reveal aos cards,Sub-task,Medium,"Classe reveal, opacity 0 to 1, translateY 40px to 0, blur 8px to 0, IntersectionObserver",hero;animation;javascript,2,,Implementar Cards Flutuantes (Z-Axis Cascade)
+[ÉPICA 4] Seção de Features,Epic,High,Implementar grid assimétrico de features com 6 cards premium,features;layout;ui,0,,
+[FEATURE 4.1] Implementar Grid Assimétrico de Features,Story,High,Criar layout bento dinâmico que destaca features principais,features;layout,10,Seção de Features,
+[US 4.1.1] Criar layout bento assimétrico para features,Sub-task,High,"Grid 1col mobile, 2col ≥768px, 3col ≥1024px com span assimétrico",features;layout;css,3,,Implementar Grid Assimétrico de Features
+[US 4.1.2] Implementar header da seção features,Sub-task,Medium,"Eyebrow 'Everything You Need', H2 'Powerful Features, Built Simple'",features;typography;content,1,,Implementar Grid Assimétrico de Features
+[FEATURE 4.2] Implementar Cards de Feature com Double-Bezel,Story,High,Criar cards premium com arquitetura Double-Bezel e hover effects,features;cards;ui,10,Seção de Features,
+[US 4.2.1] Criar estrutura de feature card com arquitetura Double-Bezel,Sub-task,High,"Background rgba(0,0,0,0.3), border hairline, ::before gradient inset, border-radius 2rem",features;cards;css,3,,Implementar Cards de Feature com Double-Bezel
+[US 4.2.2] Implementar hover effect com elevação,Sub-task,High,"Hover: border roxo, translateY(-8px), ::before opacity 1, transição 700ms cubic-bezier",features;cards;animation;css,2,,Implementar Cards de Feature com Double-Bezel
+[US 4.2.3] Adicionar conteúdo aos feature cards,Sub-task,High,"6 features: Real-Time Poker, Jira/Azure Integration, Velocity, History, Decks, Mobile",features;content;cards,2,,Implementar Cards de Feature com Double-Bezel
+[US 4.2.4] Aplicar scroll reveal aos feature cards,Sub-task,Medium,"Classe reveal em cada card, opacity/blur/translateY animations, IntersectionObserver",features;animation;javascript,2,,Implementar Cards de Feature com Double-Bezel
+[ÉPICA 5] Seção de Comparação,Epic,Medium,Implementar seção comparativa com destaques de diferencial,comparison;ui;content,0,,
+[FEATURE 5.1] Implementar Comparação com Competidores,Story,Medium,Criar layout editorial split mostrando vantagens sobre concorrentes,comparison;layout;content,8,Seção de Comparação,
+[US 5.1.1] Criar layout editorial split para comparação,Sub-task,High,"Grid 1col mobile, 1fr 1.2fr desktop, gap 6rem, align-items center",comparison;layout;css,2,,Implementar Comparação com Competidores
+[US 5.1.2] Implementar conteúdo de comparação com destaques,Sub-task,High,"Eyebrow 'Why Teams Switch', H2 'Stop Settling', 3 blocos highlight",comparison;content;typography,2,,Implementar Comparação com Competidores
+[US 5.1.3] Estruturar destaques de comparação,Sub-task,Medium,"Destaque1: Genuinely Free, Destaque2: Zero Ads, Destaque3: No Signup com ícones ✓",comparison;content;ui,1,,Implementar Comparação com Competidores
+[ÉPICA 6] Seção de Integrações,Epic,Medium,Showcase de integrações Jira/Azure/Slack/GitHub,integrations;ui,0,,
+[FEATURE 6.1] Showcase de Integrações,Story,Medium,Criar grid de cards de integrações com hover elevation,integrations;layout;ui,7,Seção de Integrações,
+[US 6.1.1] Criar grid de integrações com hover effect,Sub-task,Medium,"Grid auto-fit minmax(250px), gap 2rem, max-width 1400px",integrations;layout;css,2,,Showcase de Integrações
+[US 6.1.2] Implementar cards de integração com hover elevation,Sub-task,Medium,"Background rgba(255,255,255,0.02), border hairline, hover elevation, ::after gradient top",integrations;cards;animation;css,2,,Showcase de Integrações
+[US 6.1.3] Adicionar conteúdo aos cards de integração,Sub-task,Medium,"4 integrações: Jira Cloud, Azure DevOps, Slack, GitHub Issues com ícones e descrições",integrations;content;cards,1,,Showcase de Integrações
+[ÉPICA 7] Seção de Preços,Epic,High,Implementar pricing section com 3 planos e card destacado,pricing;cards;layout,0,,
+[FEATURE 7.1] Implementar Pricing Cards com Double-Bezel,Story,High,Criar pricing cards premium com destacado Pro,pricing;layout;cards,15,Seção de Preços,
+[US 7.1.1] Criar grid de pricing com card destaque,Sub-task,High,"Grid 1col mobile, 3col ≥768px, Pro com scale 1.05 desktop",pricing;layout;css,2,,Implementar Pricing Cards com Double-Bezel
+[US 7.1.2] Implementar estrutura de pricing card com Double-Bezel,Sub-task,High,"Background rgba(0,0,0,0.2), ::before gradient, border-radius 2rem, hover effects",pricing;cards;css,3,,Implementar Pricing Cards com Double-Bezel
+[US 7.1.3] Adicionar preços e períodos,Sub-task,High,"Starter: Free/Forever, Pro: $99/annually, Enterprise: Custom/Contact",pricing;content;typography,1,,Implementar Pricing Cards com Double-Bezel
+[US 7.1.4] Implementar lista de features com checkmarks,Sub-task,High,"Pricing-features com ::before checkmark verde, lista por plano, border-top/bottom",pricing;cards;css,2,,Implementar Pricing Cards com Double-Bezel
+[US 7.1.5] Adicionar botão CTA em cada pricing card,Sub-task,Medium,"Starter: Start Free, Pro: Start 14-Day Trial, Enterprise: Contact Sales",pricing;buttons;ui,1,,Implementar Pricing Cards com Double-Bezel
+[US 7.1.6] Estruturar lista de features de cada plano,Sub-task,High,"Starter: 5 features, Pro: 7 features, Enterprise: 7 features com tudo do Pro",pricing;content;cards,2,,Implementar Pricing Cards com Double-Bezel
+[ÉPICA 8] CTA Final e Footer,Epic,Low,Implementar seção final CTA e footer com links,footer;cta;ui,0,,
+[FEATURE 8.1] Implementar Final CTA Section,Story,Medium,Criar seção CTA final com gradiente e botão,footer;cta;ui,5,CTA Final e Footer,
+[US 8.1.1] Criar seção final com gradiente,Sub-task,Medium,"Padding 10rem 2rem, text-align center, background linear-gradient, border-top",footer;cta;css,2,,Implementar Final CTA Section
+[FEATURE 8.2] Implementar Footer,Story,Low,Criar footer com links legais e informações,footer;ui,3,CTA Final e Footer,
+[US 8.2.1] Criar footer com links e informações,Sub-task,Low,"Copyright, Privacy, Terms, Contact links, email hello@djtech.com",footer;content;links,1,,Implementar Footer
+[ÉPICA 9] Background e Efeitos Visuais,Epic,Medium,Implementar Ethereal Glass background com gradientes e ruído,background;effects;css,0,,
+[FEATURE 9.1] Implementar Ethereal Glass Background,Story,Medium,Criar background premium com gradientes radiais e noise,background;effects,6,Background e Efeitos Visuais,
+[US 9.1.1] Criar background com gradientes radiais e ruído,Sub-task,Medium,"Body #050505, ::before radial-gradients (púrpura/ciano), ::after SVG noise 0.03 opacity",background;css;effects,2,,Implementar Ethereal Glass Background
+[US 9.1.2] Implementar z-index hierarchy,Sub-task,Low,"z-index: 1 (gradientes), 2 (ruído), 10 (conteúdo), 9999 (nav), 10001 (hamburger)",background;css;architecture,1,,Implementar Ethereal Glass Background
+[ÉPICA 10] Animações e Interatividade,Epic,High,Implementar scroll reveals e interações fluidas,animation;interaction;javascript,0,,
+[FEATURE 10.1] Implementar Scroll Reveal com IntersectionObserver,Story,High,Criar animações de entrada ao scroll com IntersectionObserver,animation;javascript,8,Animações e Interatividade,
+[US 10.1.1] Criar classe reveal com animação de entrada,Sub-task,High,"Classe .reveal com opacity 0, translateY 40px, blur 8px → opacity 1, translateY 0, blur 0",animation;css,2,,Implementar Scroll Reveal com IntersectionObserver
+[US 10.1.2] Implementar IntersectionObserver em JavaScript,Sub-task,High,"IntersectionObserver com threshold 0.15, rootMargin -100px bottom, observer.unobserve ao ativar",animation;javascript,2,,Implementar Scroll Reveal com IntersectionObserver
+[FEATURE 10.2] Implementar Hamburger Morph Animation,Story,High,Criar transformação de hamburger em X ao click,animation;interaction;javascript,5,Animações e Interatividade,
+[US 10.2.1] Animar linhas do hamburger,Sub-task,High,"Linha1: rotate(45deg) translate(8px,8px), Linha2: opacity 0, Linha3: rotate(-45deg) translate(6px,-6px)",animation;css;javascript,2,,Implementar Hamburger Morph Animation
+[US 10.2.2] Implementar toggle com JavaScript,Sub-task,Medium,"Seletor .hamburger, event listener click, classList.toggle('active')",animation;javascript,1,,Implementar Hamburger Morph Animation
+[ÉPICA 11] Otimização de Performance e Acessibilidade,Epic,Medium,Implementar boas práticas de performance e acessibilidade,performance;accessibility;testing,0,,
+[FEATURE 11.1] Implementar Boas Práticas de Performance,Story,Medium,Otimizar animations e assets para performance,performance;optimization,8,Otimização de Performance e Acessibilidade,
+[US 11.1.1] Otimizar animations com transform e opacity,Sub-task,High,"Transform: translateX/Y/rotate/scale, opacity apenas, sem width/height/top/left, will-change: transform",performance;css;optimization,2,,Implementar Boas Práticas de Performance
+[US 11.1.2] Gerenciar backdrop-blur sem performance impact,Sub-task,High,"Backdrop-blur apenas em fixed/sticky (nav), nenhum em scrolláveis, GPU acceleration verificada",performance;css;optimization,2,,Implementar Boas Práticas de Performance
+[US 11.1.3] Implementar lazy loading para fontes,Sub-task,Medium,"Google Fonts com rel=preconnect, crossorigin, fallback system fonts",performance;fonts;optimization,1,,Implementar Boas Práticas de Performance
+[FEATURE 11.2] Implementar Acessibilidade,Story,Medium,Garantir acessibilidade WCAG 2.1 AA,accessibility;standards,8,Otimização de Performance e Acessibilidade,
+[US 11.2.1] Adicionar ARIA labels e roles,Sub-task,High,"Hamburger aria-label, headings hierarchy, links descriptivos, alt text, form labels",accessibility;html;standards,2,,Implementar Acessibilidade
+[US 11.2.2] Garantir contraste de cores,Sub-task,High,"Text white sobre dark ≥4.5:1, gray ≥3:1, Lighthouse/WebAIM Contrast Checker",accessibility;design;testing,2,,Implementar Acessibilidade
+[US 11.2.3] Implementar keyboard navigation,Sub-task,Medium,"Tab order lógico, botões Enter/Space, links Enter, focus visible indicators",accessibility;interaction;javascript,2,,Implementar Acessibilidade
+[US 11.2.4] Implementar mobile viewport seguro,Sub-task,Low,"Meta viewport viewport-fit=cover, 100dvh min-height, sem height 100vh, notch safe",accessibility;mobile;html,1,,Implementar Acessibilidade
+[ÉPICA 12] Testes e Validação,Epic,Medium,Validar HTML/CSS e testar responsividade,testing;validation,0,,
+[FEATURE 12.1] Validar HTML e CSS,Story,Medium,Passar em validação W3C,testing;validation,5,Testes e Validação,
+[US 12.1.1] Passar em validação W3C HTML,Sub-task,Medium,"Validar em validator.w3.org, sem erros, DOCTYPE correto, tags abertas/fechadas",testing;html;validation,1,,Validar HTML e CSS
+[US 12.1.2] Validar CSS,Sub-task,Medium,"Validar em jigsaw.w3.org/css-validator, sem erros críticos, prefixes verificados",testing;css;validation,1,,Validar HTML e CSS
+[FEATURE 12.2] Testar Responsividade,Story,High,Testar em breakpoints e dispositivos reais,testing;responsive;mobile,8,Testes e Validação,
+[US 12.2.1] Testar em breakpoints principais,Sub-task,High,"320px/768px/1024px/1400px, hamburger/nav, layout stack/grid, sem h-scroll",testing;responsive;mobile,2,,Testar Responsividade
+[US 12.2.2] Testar em dispositivos reais,Sub-task,High,"iPhone SE/14 Pro, iPad, Desktop 1920x1080, landscape, foldable",testing;mobile;devices,2,,Testar Responsividade
+[FEATURE 12.3] Testar Performance,Story,High,Validar Core Web Vitals e bundle size,testing;performance,8,Testes e Validação,
+[US 12.3.1] Validar Core Web Vitals,Sub-task,High,"LCP <2.5s, FID <100ms, CLS <0.1, PageSpeed Insights, Lighthouse ≥90 Performance",testing;performance;metrics,3,,Testar Performance
+[US 12.3.2] Otimizar bundle size,Sub-task,High,"HTML/CSS/JS minificado, CSS <50KB, JS <20KB, sem unused CSS/JS, lazy loading",testing;performance;optimization,2,,Testar Performance
+[ÉPICA 13] Build e Deployment,Epic,High,Configurar pipeline de build e deploy em GitHub Pages,deployment;ci;cd;build,0,,
+[FEATURE 13.1] Configurar Pipeline de Build,Story,High,Criar scripts de build production e development,build;ci,6,Build e Deployment,
+[US 13.1.1] Criar script de build production,Sub-task,High,"npm run build cria dist/, minificação, source maps, assets otimizadas, sem temp files",build;production;npm,2,,Configurar Pipeline de Build
+[US 13.1.2] Criar script de desenvolvimento,Sub-task,Medium,"npm start inicia dev server port 3000/8080, hot reload, source maps, logging",build;development;npm,1,,Configurar Pipeline de Build
+[FEATURE 13.2] Deploy em GitHub Pages,Story,High,Automatizar deploy com GitHub Actions,deployment;github;ci,8,Build e Deployment,
+[US 13.2.1] Configurar GitHub Pages,Sub-task,High,"GitHub Actions workflow (.github/workflows/deploy.yml), trigger push main, build, deploy gh-pages",deployment;github;ci;actions,3,,Deploy em GitHub Pages
+[US 13.2.2] Criar documentação de deployment,Sub-task,Medium,"README.md setup/build/deploy instructions, env variables, troubleshooting",documentation;readme;deployment,2,,Deploy em GitHub Pages
+[ÉPICA 14] Documentação e Manutenção,Epic,Low,Documentar código e criar guia de manutenção,documentation;maintenance,0,,
+[FEATURE 14.1] Documentação de Código,Story,Low,Documentar HTML/CSS/JavaScript,documentation;code,5,Documentação e Manutenção,
+[US 14.1.1] Documentar HTML com comentários,Sub-task,Low,"Comentários em seções (hero, features, etc), estruturas complexas, sem óbvios, consistente",documentation;html;comments,1,,Documentação de Código
+[US 14.1.2] Documentar CSS com comentários,Sub-task,Low,"Seções comentadas, técnicas complexas (Double-Bezel), variables, breakpoints",documentation;css;comments,1,,Documentação de Código
+[US 14.1.3] Documentar JavaScript com comentários,Sub-task,Low,"Funções documentadas, parâmetros, eventos, lógica complexa comentada",documentation;javascript;comments,1,,Documentação de Código
+[FEATURE 14.2] Manutenção e Atualizações,Story,Low,Criar guia de manutenção,documentation;maintenance,3,Documentação e Manutenção,
+[US 14.2.1] Criar guia de manutenção,Sub-task,Low,"MAINTENANCE.md: adicionar seções, modificar cores/fonts, adicionar animações, contatos",documentation;maintenance,1,,Manutenção e Atualizações
+[US 14.2.2] Manter dependências atualizadas,Sub-task,Low,"npm audit sem crítico, dependências atualizadas, changelog, versão em package.json",documentation;maintenance;dependencies,1,,Manutenção e Atualizações
