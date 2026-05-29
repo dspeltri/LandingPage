@@ -1,0 +1,25 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dspeltri/LandingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dspeltri/LandingPage/issues"
+  },
+  "homepage": "https://github.com/dspeltri/LandingPage#readme",
+  "devDependencies": {
+    "vite": "^8.0.14"
+  }
+}
