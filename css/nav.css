@@ -1,0 +1,25 @@
+.nav {
+    position: fixed;
+    top: 1.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,0,0.05);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 9999;
+}
+.nav__logo{
+    background: linear-gradient(135deg,#9370db, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
