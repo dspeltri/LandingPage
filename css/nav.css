@@ -42,3 +42,39 @@
 .nav__link:hover::after{
     width: 100%;
 }
+.nav__hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+.nav__hamburger-line{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #f5f5f5;
+    transition: all 700ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.nav__hamburger.active .nav__hamburger-line:nth-child(1){
+    transform: rotate(45deg) translate(8px, 8px);   
+}
+.nav__hamburger.active .nav__hamburger-line:nth-child(2){
+    opacity: 0;
+}
+.nav__hamburger.active .nav__hamburger-line:nth-child(3){
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+@media (max-width:786px){
+    .nav__hamburger{
+        display: flex;
+    }
+    .nav__link {
+        display: none;
+    }
+    .nav.active .nav__link {
+        display: block;
+    }
+}
