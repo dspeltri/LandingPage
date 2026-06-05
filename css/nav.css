@@ -78,3 +78,36 @@
         display: block;
     }
 }
+.cta-button{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.75rem;
+    border-radius: 9999px;
+    border: none;
+    background: rgba(174, 112, 219, 0.2);
+    color: #f5f5f5;
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.cta-button:hover{
+    transform: scale(1.08);
+}
+.cta-button:active{
+    transform: scale(0.98);
+}
+.cta-button__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(196, 181, 253, 0.15);
+    transition: all 500ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.cta-button:hover .cta-button__icon{
+    transform: traslate(2px, -2px) scale(1.8);
+    background: rgba(196, 181, 253, 0.3);
+}
