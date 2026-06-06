@@ -68,15 +68,48 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 @media (max-width:786px){
+    .nav{
+    padding: 0.75rem 1rem;
+    }
     .nav__hamburger{
-        display: flex;
+    display: flex;
     }
     .nav__link {
-        display: none;
+    display: none;
     }
     .nav.active .nav__link {
-        display: block;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
     }
+    .nav.active {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem;
+    }
+    .nav.active .nav__hamburger {
+    align-self: flex-end;
+    }
+    .cta-button {
+    padding: 0.75rem;
+    }
+  .cta-button span,
+  .cta-button-text {
+    display: none;
+    }
+  .cta-button__icon {
+    display: flex;
+    }
+}
+@media(min-width: 787px){
+    .nav__hamburger{
+    display: none;
+    }
+}
+body{
+    overflow-x: hidden;
+    max-width: 100%;
 }
 .cta-button{
     display: flex;
