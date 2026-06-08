@@ -15,3 +15,25 @@
         padding: 8rem 2rem;
     }
 }
+.eyebrow{
+    display: inline-flex;
+    width: fit-content;
+    background: rgb(147, 112, 219, 0.12);
+    color: #c4b5fd;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+}
+.hero__title{
+    font-family: 'Clash Display', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fff 0%, #d0d0d0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
