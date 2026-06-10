@@ -37,3 +37,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+.hero__description{
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: #a0a0a0;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
