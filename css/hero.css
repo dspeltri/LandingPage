@@ -44,3 +44,43 @@
     line-height: 1.8;
     margin-bottom: 3rem;
 }
+.hero__cta{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.cta-button-primary{
+    display:flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.75rem;
+    border-radius: 9999px;
+    border: 1px solid rgb(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, rgba(147, 112, 219, 0.3) 0%, rgba(34, 211, 238, 0.2) 100%);
+    color: #f5f5f5;
+    font-family: 'Geist', system-ui, sans-serif;
+    cursor: pointer;
+    transition: all 700ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.cta-button-primary:hover{
+    background: linear-gradient(135deg, rgba(147, 112, 219, 0.6) 0%, rgba(34, 211, 238, 0.4) 100%);
+    box-shadow: 0 0 24px rgba(147, 112, 219, 0.4);
+}
+.cta-button-secondary{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.75rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    color: #f5f5f5;
+    font-family: 'Geist', system-ui, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 700ms cubic-bezier(0.32, 0.72, 0 , 1);
+}
+.cta-button-secondary:hover{
+    background: rgb(255, 255, 255, 0.05);
+    border-color: rgb(255, 255, 255, 0.3);
+}
