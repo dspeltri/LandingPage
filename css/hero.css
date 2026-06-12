@@ -84,3 +84,21 @@
     background: rgb(255, 255, 255, 0.05);
     border-color: rgb(255, 255, 255, 0.3);
 }
+.hero__badges{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+.hero__badge{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+.hero__badge-icon{
+    font-size: 1.3rem;
+}
