@@ -1,0 +1,24 @@
+#features{
+    padding: 8rem 2rem;
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .feature-card:nth-child(2) {
+        grid-column: span 2; 
+    }
+}
