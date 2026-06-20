@@ -22,3 +22,37 @@
         grid-column: span 2; 
     }
 }
+.section-header{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.section-header .eyebrow{
+    justify-content: center;
+}
+.feature-card{
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    will-change: transform;
+    transition: transform 700ms cubic-bezier(0.32, 0.72, 0, 1), border-color 700ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.feature-card:hover{
+    transform: translateY(-8px);
+    border-color: rgba(147, 112, 219, 0.3);
+}
+.feature-card::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: calc(2rem - 1px);
+    background: linear-gradient(135deg, rgba(147, 112, 219, 0.15) 0%, rgba(34, 211, 238, 0.15) 100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.feature-card:hover::before{
+    opacity: 1;
+}
