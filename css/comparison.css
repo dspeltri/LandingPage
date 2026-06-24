@@ -1,0 +1,19 @@
+#comparison{
+    padding: 8rem 2rem;
+    background: rgba(147, 112, 219, 0.03);
+    border-top: 1px solid rgba(147, 112, 219, 0.1);
+    border-bottom: 1px solid rgba(147, 112, 219, 0.1);
+}
+.comparison-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+@media (min-width: 1024px){
+    .comparison-container{
+        grid-template-columns: 1fr 1.2fr;
+        gap: 6rem;
+    }
+}
