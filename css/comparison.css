@@ -17,3 +17,33 @@
         gap: 6rem;
     }
 }
+.comparison-our-side h2{
+    color: #fff;
+    font-family: 'Clash Display', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+.comparison-our-side > p{
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+.comparison-highlight{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(147, 112, 219, 0.1);
+    border-left: 3px solid #9370db;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+.comparison-highlight__icon{
+    color: #9370db;
+    font-size: 1.5rem;
+}
+.comparison-highlight p {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
