@@ -1,0 +1,86 @@
+#pricing{
+    padding: 8rem 2rem;
+    background:rgba(34, 211, 238, 0.02);
+    border-top: 1px solid rgba(34, 211, 238, 0.1);
+}
+.pricing-container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.pricing-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+@media (min-width: 768px) {
+    .pricing-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pricing-card.featured {
+        transform: scale(1.05);
+    }
+}
+.pricing-card{
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2rem;
+    padding: 3rem;
+    transition: transform 700ms cubic-bezier(0.32, 0.72, 0, 1), border-color 700ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.pricing-card::before{
+    content: '';
+    position: absolute;
+    inset: 1px;
+    border-radius: calc(2rem - 1px);
+    background: linear-gradient(135deg, rgba(147, 112, 219, 0.08) 0%, rgba(34, 211, 238, 0.08) 100%);
+    opacity: 0;
+    transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.pricing-card:hover{
+    transform: translateY(-8px);
+    border-color: rgba(147, 112, 219, 0.3);
+}
+.pricing-card:hover::before{
+    opacity: 1;
+}
+.pricing-card .featured{
+    border-color: rgba(147, 112, 219, 0.4);
+    transform: scale(1);
+}
+.pricing-card__price{
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #9370db 0%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 2rem 0 1rem;
+}
+.pricing-card__period{
+    font-size: 1rem;
+    color: #999;
+    font-weight: 400;
+}
+.pricing-features{
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem  0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pricing-features li{
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.8rem;
+    color: #a0a0a0;
+    font-size: 0.95rem;
+}
+.pricing-features li::before{
+    content: '✓';
+    color:#4ade80;
+    font-size: 1.1rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
