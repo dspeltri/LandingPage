@@ -1,0 +1,20 @@
+#pricing{
+    padding: 8rem 2rem;
+    background:rgba(34, 211, 238, 0.02);
+    border-top: 1px solid rgba(34, 211, 238, 0.1);
+}
+.pricing-container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.pricing-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+@media (min-width: 768px) {
+    .pricing-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
