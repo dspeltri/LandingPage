@@ -63,3 +63,24 @@
     color: #999;
     font-weight: 400;
 }
+.pricing-features{
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem  0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pricing-features li{
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.8rem;
+    color: #a0a0a0;
+    font-size: 0.95rem;
+}
+.pricing-features li::before{
+    content: '✓';
+    color:#4ade80;
+    font-size: 1.1rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
