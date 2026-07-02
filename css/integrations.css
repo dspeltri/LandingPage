@@ -40,3 +40,16 @@
 .integration-card:hover::after{
     opacity: 1;
 }
+.integration__icon{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.integration-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+.integration-card p{
+    font-size: 0.9rem;
+    color: #999;
+}
