@@ -84,3 +84,8 @@
     font-weight: bold;
     flex-shrink: 0;
 }
+.pricing-card__cta{
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
