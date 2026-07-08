@@ -1,0 +1,22 @@
+footer{
+    padding: 3rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+footer a{
+    color: #9370db;
+    text-decoration: none;
+    transition: color 500ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+footer a:hover{
+    color: #c4b5fd;
+}
+footer nav{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    align-items: center;
+}
