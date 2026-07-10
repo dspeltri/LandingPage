@@ -18,3 +18,12 @@ body::after{
     z-index: 2;
     opacity: 0.03;
 }
+section,
+main,
+nav {
+    position: relative;
+    z-index: 10;
+}
+.nav__hamburger {
+    z-index: 10001;
+}
