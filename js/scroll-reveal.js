@@ -3,7 +3,11 @@ const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
+            entry.target.style.willChange = 'transform';
             entry.target.classList.add('active');
+            setTimeout(() => {
+                entry.target.style.willChange = 'auto';
+            }, 1000);
             observer.unobserve(entry.target);
         }
     });
