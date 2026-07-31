@@ -7,7 +7,7 @@
 .final-cta h2{
     font-size: clamp(2rem, 6vw, 3.5rem);
     margin-bottom: 1.5rem;
-    font-family:'Clash Display', Arial Black, sans-serif;
+    font-family:'Clash Display', 'Arial Black', sans-serif;
 }
 .final-cta p{
     font-size: 1.1rem;

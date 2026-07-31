@@ -36,7 +36,7 @@
     margin-bottom: 1rem;
 }
 .hero__title{
-    font-family: 'Clash Display', Arial Black, sans-serif;
+    font-family: 'Clash Display', 'Arial Black', sans-serif;
     font-size: clamp(2.5rem, 8vw, 5.5rem);
     line-height: 1.1;
     letter-spacing: -0.02em;
