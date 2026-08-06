@@ -68,7 +68,7 @@
 .nav__hamburger.active .nav__hamburger-line:nth-child(3){
     transform: rotate(-45deg) translate(6px, -6px);
 }
-@media (max-width:786px){
+@media (max-width:767px){
     .nav{
     padding: 0.75rem 1rem;
     }
@@ -103,7 +103,7 @@
     display: flex;
     }
 }
-@media(min-width: 787px){
+@media(min-width: 768px){
     .nav__hamburger{
     display: none;
     }
