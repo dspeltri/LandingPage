@@ -95,7 +95,7 @@
     .cta-button {
     padding: 0.75rem;
     }
-  .cta-button span,
+  .cta-button__text,
   .cta-button-text {
     display: none;
     }
