@@ -10,8 +10,9 @@ npm install
 ```
 Ambiente de desenvolvimento (com hot-reload):
 ```bash
-npm run dev
+npm start
 ```
+Sobe em `http://localhost:3000`.
 ## Build de produção
 ```bash
 npm run build
@@ -22,7 +23,7 @@ Para testar o build antes de publicar:
 ```bash
 npx vite preview
 ```
-O terminal mostra a URL exata
+O terminal mostra a URL exata.
 ## Estrutura
 ```
 LandingPage/
