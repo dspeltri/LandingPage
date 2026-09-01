@@ -11,6 +11,7 @@
     grid-template-columns: 1fr;
     align-items: center;
 }
+/* ===== Breakpoint desktop: layout editorial em 2 colunas (texto | espaço reservado) ===== */
 @media (min-width: 1024px){
     .comparison-container{
         grid-template-columns: 1fr 1.2fr;
@@ -28,6 +29,7 @@
     margin-bottom: 2rem;
     line-height: 1.7;
 }
+/* Highlight com borda lateral colorida, destacando cada diferencial do produto */
 .comparison-highlight{
     display: flex;
     align-items: flex-start;

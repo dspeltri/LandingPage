@@ -5,6 +5,7 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+/* auto-fit + minmax: grid responsivo sem media query — o número de colunas se ajusta sozinho conforme o espaço disponível, com no mínimo 250px por card */
 .integrations-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -22,6 +23,7 @@
     will-change: transform; 
     transition: all 700ms cubic-bezier(0.32, 0.72, 0, 1);
 }
+/* Linha de gradiente no topo do card, revelada só no hover */
 .integration-card::after{
     content: '';
     position: absolute;

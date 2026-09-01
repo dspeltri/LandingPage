@@ -1,9 +1,11 @@
+/* ===== Navbar flutuante (glass effect) ===== */
 .nav {
     position: fixed;
     top: 1.5rem;
     left:50%;
     transform: translateX(-50%);
     background: rgba(255,255,255,0.05);
+    /* Ordem importa: o esbuild (minificador) descarta a primeira declaração "duplicada" ao minificar — -webkit- precisa vir antes da versão padrão */
     -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -29,6 +31,7 @@
     position: relative;
     font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
+/* Sublinhado com gradiente que "cresce" da esquerda pra direita no hover */
 .nav__link::after{
     content: '';
     position: absolute;
@@ -42,6 +45,7 @@
 .nav__link:hover::after{
     width: 100%;
 }
+/* ===== Menu hamburger (mobile) ===== */
 .nav__hamburger{
     display: none;
     flex-direction: column;
@@ -59,6 +63,7 @@
     transition: all 700ms cubic-bezier(0.32, 0.72, 0, 1);
     transform-origin: center;
 }
+/* Morph animation: as 3 linhas do hamburger viram um "X" quando .active é adicionado via JS (nav.js) */
 .nav__hamburger.active .nav__hamburger-line:nth-child(1){
     transform: rotate(45deg) translate(8px, 8px);   
 }
@@ -68,6 +73,7 @@
 .nav__hamburger.active .nav__hamburger-line:nth-child(3){
     transform: rotate(-45deg) translate(6px, -6px);
 }
+/* ===== Breakpoint mobile: abaixo de 768px vira hamburger ===== */
 @media (max-width:767px){
     .nav{
     padding: 0.75rem 1rem;
@@ -95,6 +101,7 @@
     .cta-button {
     padding: 0.75rem;
     }
+    /* Em telas pequenas, o CTA "Get Started" vira só o ícone circular, sem o texto */
   .cta-button__text,
   .cta-button-text {
     display: none;
@@ -103,6 +110,7 @@
     display: flex;
     }
 }
+/* ===== Breakpoint desktop: 768px+ mostra os links, esconde o hamburger ===== */
 @media(min-width: 768px){
     .nav__hamburger{
     display: none;
@@ -112,6 +120,7 @@ body{
     overflow-x: hidden;
     max-width: 100%;
 }
+/* ===== Botão CTA genérico (reutilizado na navbar, pricing e final-cta) ===== */
 .cta-button{
     display: flex;
     align-items: center;
@@ -131,6 +140,7 @@ body{
 .cta-button:active{
     transform: scale(0.98);
 }
+/* Círculo com o ícone de seta dentro do CTA (span, não div — button não aceita div como filho) */
 .cta-button__icon{
     display: flex;
     align-items: center;
