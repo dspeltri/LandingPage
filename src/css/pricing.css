@@ -13,6 +13,7 @@
     gap: 2.5rem;
     margin-top: 4rem;
 }
+/* ===== Breakpoint tablet+: 3 colunas, plano "featured" ganha destaque com escala maior ===== */
 @media (min-width: 768px) {
     .pricing-grid{
         grid-template-columns: repeat(3, 1fr);
@@ -21,6 +22,7 @@
         transform: scale(1.05);
     }
 }
+/* ===== Pricing card com o mesmo efeito "Double-Bezel" do feature-card (ver features.css) ===== */
 .pricing-card{
     position: relative;
     background: rgba(0, 0, 0, 0.2);
@@ -50,6 +52,7 @@
     border-color: rgba(147, 112, 219, 0.4);
     transform: scale(1);
 }
+/* Preço com gradiente de texto (mesma técnica do hero__title) */
 .pricing-card__price{
     font-size: 3rem;
     font-weight: 700;
@@ -78,6 +81,7 @@
     color: #a0a0a0;
     font-size: 0.95rem;
 }
+/* Checkmark verde via ::before em vez de HTML, mantendo a lista semanticamente simples */
 .pricing-features li::before{
     content: '✓';
     color:#4ade80;

@@ -1,3 +1,4 @@
+/* ===== Grid de features ===== */
 #features{
     padding: 8rem 2rem;
     max-width: 1400px; 
@@ -8,12 +9,14 @@
     grid-template-columns: 1fr; 
     gap: 2rem;
 }
+/* ===== Breakpoint tablet: 2 colunas ===== */
 @media (min-width: 768px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 2.5rem;
     }
 }
+/* ===== Breakpoint desktop: 3 colunas (o 2º card ocupa 2 colunas, criando um grid assimétrico) ===== */
 @media (min-width: 1024px) {
     .features-grid {
         grid-template-columns: repeat(3, 1fr); 
@@ -29,6 +32,8 @@
 .section-header .eyebrow{
     justify-content: center;
 }
+/* ===== Feature card com efeito "Double-Bezel" =====
+   O ::before cria uma segunda camada de gradiente 1px para dentro do card, que só fica visível (opacity: 1) no hover — dá a sensação de uma moldura dupla */
 .feature-card{
     position: relative;
     background: rgba(0, 0, 0, 0.3);
@@ -56,6 +61,7 @@
 .feature-card:hover::before{
     opacity: 1;
 }
+/* z-index: 2 garante que o conteúdo real fique acima da camada do Double-Bezel (::before) */
 .feature-card-content{
     position: relative;
     z-index: 2;
