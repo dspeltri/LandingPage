@@ -28,6 +28,7 @@
 </head>
 <body>
     <a href="#home" class="skip-link">Skip to main content</a>
+    <!-- Navegação principal: logo, links, CTA e menu hamburger (mobile) -->
     <header aria-label="Main header">
         <nav class="nav" aria-label="Main navigation">
             <a href="#home" class="nav__logo">D&J Technology</a>
@@ -36,6 +37,7 @@
             <a href="mailto:hello@djtech.com" class="nav__link">Contact</a>
             <button class="cta-button" aria-label="Get Started">
             <span class="cta-button__text">Get Started</span>
+            <!-- Ícone SVG inline (seta): usado em vários CTAs do site para manter o mesmo estilo visual -->
                 <span class="cta-button__icon">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3 8h10M9 4l4 4-4 4" stroke="#c4b5fd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,6 +53,7 @@
     </header>
 
     <main>
+        <!-- Hero: título principal, descrição, CTAs e cards flutuantes de destaque -->
         <section id="home" class="hero" aria-label="Hero section">
             <div class="hero__content">
                 <span class="eyebrow">Agile Estimation Perfected</span>
@@ -83,7 +86,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Cards flutuantes com preview de funcionalidades (animação floatCard definida em hero.css) -->
             <div class="hero-visual">
+                <!-- h2 oculto (classe sr-only): mantém a hierarquia de headings correta para leitores de tela sem alterar o visual, já que os cards abaixo usam h3 -->
                 <h2 class="sr-only">Key Features Preview</h2>
                 <div class="hero-card hero-card--1 reveal">
                     <h3>📊 Live Voting</h3>
@@ -100,6 +105,7 @@
             </div>
         </section>
 
+        <!-- Features: grid de funcionalidades do produto -->
         <section id="features" aria-label="Features">
             <div class="section-header">
                 <span class="eyebrow">Everything You Need</span>
@@ -151,6 +157,7 @@
             </div>
         </section>
 
+        <!-- Comparison: destaque dos diferenciais frente à concorrência -->
         <section id="comparison" aria-label="Comparison section">
             <div class="comparison-container">
                 <div class="comparison-our-side">
@@ -169,11 +176,13 @@
                         <p><strong>No Signup Hell</strong> — Share a link. Participants join instantly. Only the Scrum Master needs an account for persistence and pro features.</p>
                     </div>
                 </div>
+                <!-- Lado direito reservado para comparação com concorrentes específicos: sem requisito de conteúdo definido ainda -->
                 <div class="comparison-their-side">
                 </div>
             </div>
         </section>
         
+        <!-- Integrations: ferramentas com as quais o produto se conecta -->
         <section id="integrations" aria-label="Integrations section">
             <div class="section-container">
                 <div class="section-header">
@@ -205,6 +214,7 @@
             </div>
         </section>
 
+        <!-- Pricing: planos e preços disponíveis -->
         <section id="pricing" aria-label="Pricing section">
             <div class="pricing-container">
                 <div class="section-header">
@@ -224,6 +234,7 @@
                         </ul>
                         <button class="cta-button cta-button-primary pricing-card__cta">Start Free</button>
                     </div>
+                    <!-- Card "featured": plano em destaque visual (escala aumentada em telas >= 768px, ver pricing.css) -->
                     <div class="pricing-card featured">
                         <div class="pricing-card__price">$99</div>
                         <div class="pricing-card__period">per month, billed annually</div>
@@ -256,6 +267,7 @@
             </div>
         </section>
 
+        <!-- Final CTA: última chamada para ação antes do footer -->
         <section class="final-cta reveal" aria-label="Final CTA">
             <h2>Transform Your Sprint Planning Today</h2>
             <p>Join agile teams who've ditched ads, paywalls, and unnecessary complexity.</p>
@@ -263,6 +275,7 @@
         </section>
     </main>
 
+    <!-- Footer: copyright, links institucionais e contato -->
     <footer aria-label="Page footer">
         <p>© 2026 D&J Technology. All rights reserved.</p>
         <nav aria-label="Footer navigation">
